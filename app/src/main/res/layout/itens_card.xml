@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="2dp"
+    android:background="#EDDBC3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvNomePlaneta"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:textAlignment="center"
+        android:textColor="#076807"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:layout_marginLeft="2dp" />
+
+    <ImageView
+        android:id="@+id/ivImgPlaneta"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignWithParentIfMissing="false"
+
+        android:layout_below="@+id/tvNomePlaneta"
+        android:layout_alignBottom="@id/tvDescPlaneta"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="38dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnDeletar"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@id/tvNomePlaneta"
+        android:backgroundTint="#009688"
+        android:text="Apagar"
+        android:textAlignment="center"
+        android:textColor="#051F80"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="visible">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tvDescPlaneta"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_below="@+id/tvNomePlaneta"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_toRightOf="@+id/ivImgPlaneta"
+        android:autoSizeTextType="uniform"
+        android:elegantTextHeight="true"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#031468"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tvDescPlaneta"
+        android:layout_marginTop="8dp"
+        android:background="#DAD8D8"
+        android:visibility="visible" />
+
+</RelativeLayout>
